@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from article.models import Article
 from django.http import Http404
 
+
 # Create your views here.
 def home(request):
     post_list = Article.objects.all()
