@@ -25,5 +25,7 @@ urlpatterns = [
 
     url(r'^article/(\d+)/$', article.views.detail, name = 'detail'),
 
+    url(r'^aboutme/$', article.views.about_me, name = 'about_me'),
 
+    url(r'^category/(\w+)/$', article.views.search_tag, name = 'search_tag'),
 ]

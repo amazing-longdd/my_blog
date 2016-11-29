@@ -1,23 +1,24 @@
 {% extends "base.html" %}
+
 {% load custom_markdown %}
 {% block content %}
 <div class="posts">
-    {% for post in post_list %}
+    {% for article in article_list %}
         <section class="post">
             <header class="post-header">
-                <h2 class="post-title">{{ post.title }}</h2>
+                <h2 class="post-title">{{ article.title }}</h2>
 
                     <p class="post-meta">
-                        时间:  {{ post.date_time }}<a class="post-category post-category-js" href="{% url 'search_tag' post.category %}">{{ post.category }}</a>
+                        时间:  {{ article.date_time }}<a class="post-category post-category-js" href="{% url 'search_tag' article.category %}">{{ article.category }}</a>
                     </p>
             </header>
 
                 <div class="post-description">
                     <p>
-                        {{ post.content|custom_markdown|safe }}
+                        {{ article.content|custom_markdown }}
                     </p>
                 </div>
-                <a class="pure-button" href="{% url 'detail' post.id %}">阅读全文 >>> </a>
+                <a class="pure-button" href="{% url 'detail' article.id %}">阅读全文 >>> </a>
         </section>
     {% endfor %}
 </div><!-- /.blog-post -->

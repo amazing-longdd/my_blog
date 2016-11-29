@@ -21,3 +21,13 @@ def detail(request,id):
     return render(request, 'article.html', {'article': article})
 
 
+def about_me(request):
+    return render(request, 'aboutme.html')
+
+
+def search_tag(request, tag):
+    try:
+        article_list = Article.objects.filter(category__iexact=tag)
+    except Article.DoesNotExist:
+        raise Http404
+    return render(request, 'tag.html', {'article_list': article_list})
