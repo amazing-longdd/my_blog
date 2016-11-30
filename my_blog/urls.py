@@ -17,6 +17,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 import article.views
+from article.views import RSSFeed
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,4 +29,6 @@ urlpatterns = [
     url(r'^aboutme/$', article.views.about_me, name = 'about_me'),
 
     url(r'^category/(\w+)/$', article.views.search_tag, name = 'search_tag'),
+
+    url(r'^feed/$', RSSFeed(), name = "RSS"),  #新添加的urlconf, 并将name设置为RSS, 方便在模板中使用url
 ]
