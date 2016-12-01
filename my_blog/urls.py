@@ -31,4 +31,6 @@ urlpatterns = [
     url(r'^category/(\w+)/$', article.views.search_tag, name = 'search_tag'),
 
     url(r'^feed/$', RSSFeed(), name = "RSS"),  #新添加的urlconf, 并将name设置为RSS, 方便在模板中使用url
+
+    url(r'tags/$',article.views.showAllTags,name = 'show_tags'),
 ]
