@@ -18,6 +18,7 @@ from django.conf.urls import url
 from django.contrib import admin
 import article.views
 from article.views import RSSFeed
+import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -33,4 +34,7 @@ urlpatterns = [
     url(r'^feed/$', RSSFeed(), name = "RSS"),  #新添加的urlconf, 并将name设置为RSS, 方便在模板中使用url
 
     url(r'tags/$',article.views.showAllTags,name = 'show_tags'),
+
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT }),
+
 ]

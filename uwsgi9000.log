@@ -1,0 +1,30 @@
+*** Starting uWSGI 2.0.14 (64bit) on [Thu Dec  8 19:42:45 2016] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-4) on 08 December 2016 15:31:17
+os: Linux-3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016
+nodename: iZuf69mrziellj7yw4isrdZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /opt
+writing pidfile to /var/run/uwsgi9000.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/var/run/uwsgi9000.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3588]
+*** Starting uWSGI 2.0.14 (64bit) on [Thu Dec  8 19:54:12 2016] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-4) on 08 December 2016 15:31:17
+os: Linux-3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016
+nodename: iZuf69mrziellj7yw4isrdZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /opt/soft/nginx/conf
+writing pidfile to /var/run/uwsgi9000.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/var/run/uwsgi9000.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3588]
+*** Starting uWSGI 2.0.14 (64bit) on [Thu Dec  8 20:08:48 2016] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-4) on 08 December 2016 15:31:17
+os: Linux-3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016
+nodename: iZuf69mrziellj7yw4isrdZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /opt
+writing pidfile to /var/run/uwsgi9000.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/var/run/uwsgi9000.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3588]
